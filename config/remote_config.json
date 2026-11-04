@@ -1,0 +1,1360 @@
+{
+  "version": 4,
+  "flags": {
+    "contentHub": true,
+    "multiview": true,
+    "recordings": false
+  },
+  "scoresRefreshSeconds": 30,
+  "services": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "short": "NETFLIX",
+      "color": "#E50914",
+      "packages": [
+        "com.netflix.ninja",
+        "com.netflix.mediaclient"
+      ],
+      "deepLink": "https://www.netflix.com/title/{id}",
+      "search": "https://www.netflix.com/search?q={query}",
+      "tmdbProviderId": 8
+    },
+    {
+      "id": "prime",
+      "name": "Prime Video",
+      "short": "PRIME",
+      "color": "#00A8E1",
+      "packages": [
+        "com.amazon.amazonvideo.livingroom",
+        "com.amazon.avod.thirdpartyclient"
+      ],
+      "deepLink": "https://app.primevideo.com/detail?gti={id}",
+      "search": null,
+      "tmdbProviderId": 9
+    },
+    {
+      "id": "disney",
+      "name": "Disney+",
+      "short": "DISNEY+",
+      "color": "#113CCF",
+      "packages": [
+        "com.disney.disneyplus"
+      ],
+      "deepLink": "https://www.disneyplus.com/video/{id}",
+      "search": null,
+      "tmdbProviderId": 337
+    },
+    {
+      "id": "max",
+      "name": "Max",
+      "short": "MAX",
+      "color": "#002BE7",
+      "packages": [
+        "com.wbd.stream",
+        "com.hbo.hbonow"
+      ],
+      "deepLink": "https://play.max.com/show/{id}",
+      "search": null,
+      "tmdbProviderId": 1899
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "short": "HULU",
+      "color": "#1CE783",
+      "packages": [
+        "com.hulu.livingroomplus",
+        "com.hulu.plus"
+      ],
+      "deepLink": "https://www.hulu.com/watch/{id}",
+      "search": null,
+      "tmdbProviderId": 15
+    },
+    {
+      "id": "hululive",
+      "name": "Hulu + Live TV",
+      "short": "HULU LIVE",
+      "color": "#1CE783",
+      "packages": [
+        "com.hulu.livingroomplus",
+        "com.hulu.plus"
+      ],
+      "deepLink": null,
+      "search": null,
+      "tmdbProviderId": null
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "short": "PEACOCK",
+      "color": "#F5F5F5",
+      "packages": [
+        "com.peacocktv.peacockandroid"
+      ],
+      "deepLink": null,
+      "search": null,
+      "tmdbProviderId": 386
+    },
+    {
+      "id": "paramount",
+      "name": "Paramount+",
+      "short": "PARAMOUNT+",
+      "color": "#0064FF",
+      "packages": [
+        "com.cbs.ott",
+        "com.cbs.app"
+      ],
+      "deepLink": null,
+      "search": null,
+      "tmdbProviderId": 531
+    },
+    {
+      "id": "appletv",
+      "name": "Apple TV+",
+      "short": "APPLE TV+",
+      "color": "#F2F3F5",
+      "packages": [
+        "com.apple.atve.androidtv.appletv"
+      ],
+      "deepLink": null,
+      "search": null,
+      "tmdbProviderId": 350
+    },
+    {
+      "id": "youtubetv",
+      "name": "YouTube TV",
+      "short": "YTTV",
+      "color": "#FF0000",
+      "packages": [
+        "com.google.android.youtube.tvunplugged"
+      ],
+      "deepLink": null,
+      "search": null,
+      "tmdbProviderId": null,
+      "channelLink": "https://tv.youtube.com/watch/{id}"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "short": "YOUTUBE",
+      "color": "#FF0000",
+      "packages": [
+        "com.google.android.youtube.tv",
+        "com.google.android.youtube"
+      ],
+      "deepLink": "https://www.youtube.com/watch?v={id}",
+      "search": "https://www.youtube.com/results?search_query={query}",
+      "tmdbProviderId": 235
+    }
+  ],
+  "trailer": {
+    "packages": [
+      "com.google.android.youtube.tv",
+      "com.google.android.youtube"
+    ],
+    "url": "https://www.youtube.com/watch?v={key}"
+  },
+  "suggestedGuides": [
+    {
+      "name": "free US TV guide (EPGTalk)",
+      "url": "https://raw.githubusercontent.com/acidjesuz/EPGTalk/master/US_lite.xml.gz",
+      "description": "Listings for US channels like ESPN, CNN and TNT, next 48 hours. A free community guide, for personal use; not made by ProView."
+    }
+  ],
+  "liveLineups": {
+    "_note": "Channel lineups for live-TV streaming services, shown in the Guide. [name, category, optional channel id for the service's channelLink]. Lineups vary by ZIP code (locals); keep in sync with the services' own pages.",
+    "youtubetv": [
+      [
+        "ABC",
+        "Local"
+      ],
+      [
+        "CBS",
+        "Local"
+      ],
+      [
+        "FOX",
+        "Local"
+      ],
+      [
+        "NBC",
+        "Local"
+      ],
+      [
+        "PBS",
+        "Local"
+      ],
+      [
+        "The CW",
+        "Local"
+      ],
+      [
+        "MyNetworkTV",
+        "Local"
+      ],
+      [
+        "ESPN",
+        "Sports",
+        "qVsS4eMDgqo"
+      ],
+      [
+        "ESPN2",
+        "Sports",
+        "nIaQPNyNo34"
+      ],
+      [
+        "ESPNU",
+        "Sports",
+        "p0TOraK6Img"
+      ],
+      [
+        "ESPNews",
+        "Sports",
+        "hbYvuCKXj0Y"
+      ],
+      [
+        "ACC Network",
+        "Sports",
+        "VasWEa--oME"
+      ],
+      [
+        "SEC Network",
+        "Sports",
+        "iuDz6UdSjMo"
+      ],
+      [
+        "Big Ten Network",
+        "Sports",
+        "tUwIbNAQ6yU"
+      ],
+      [
+        "CBS Sports Network",
+        "Sports",
+        "fGRTFzKDNAc"
+      ],
+      [
+        "FS1",
+        "Sports",
+        "PIJjfw43Rao"
+      ],
+      [
+        "FS2",
+        "Sports",
+        "lc06tgwYNZs"
+      ],
+      [
+        "Golf Channel",
+        "Sports",
+        "f4VYXRthuQI"
+      ],
+      [
+        "NBA TV",
+        "Sports",
+        "F3wVB3UuZGo"
+      ],
+      [
+        "NFL Network",
+        "Sports",
+        "WPuH0gnV73o"
+      ],
+      [
+        "TUDN",
+        "Sports",
+        "4q6WtzbpuSQ"
+      ],
+      [
+        "T2",
+        "Sports",
+        "OaIlxY4cO0k"
+      ],
+      [
+        "PickleballTV",
+        "Sports",
+        "mDtDcVzD6KI"
+      ],
+      [
+        "ABC News Live",
+        "News",
+        "bm_DB8-y0sU"
+      ],
+      [
+        "BBC News",
+        "News",
+        "4H6ju8MjZTI"
+      ],
+      [
+        "Bloomberg TV",
+        "News",
+        "m71BDM4lt20"
+      ],
+      [
+        "CNBC",
+        "News",
+        "I-7YWn-wtFA"
+      ],
+      [
+        "CNBC World",
+        "News"
+      ],
+      [
+        "CNN",
+        "News",
+        "AW9-z6zluec"
+      ],
+      [
+        "Cheddar News",
+        "News",
+        "vPdWqIkXyJ0"
+      ],
+      [
+        "C-SPAN",
+        "News",
+        "YsUiEIefQjQ"
+      ],
+      [
+        "C-SPAN 2",
+        "News",
+        "Z6dXr-ocSks"
+      ],
+      [
+        "C-SPAN 3",
+        "News",
+        "CKogQFqwB7g"
+      ],
+      [
+        "FOX Business",
+        "News",
+        "4EtVqCMzJok"
+      ],
+      [
+        "FOX News",
+        "News",
+        "q5TBgD8fyG8"
+      ],
+      [
+        "FOX Weather",
+        "News",
+        "04azmfxi7kA"
+      ],
+      [
+        "HLN",
+        "News",
+        "W47KnYV-tBI"
+      ],
+      [
+        "LiveNOW from FOX",
+        "News",
+        "mSOCJ1kPsVg"
+      ],
+      [
+        "MS NOW",
+        "News",
+        "VlWoYVR-sj0"
+      ],
+      [
+        "NBC News NOW",
+        "News",
+        "ApPDaqv6EvE"
+      ],
+      [
+        "NECN",
+        "News"
+      ],
+      [
+        "Newsmax",
+        "News",
+        "VAP-os2aRJo"
+      ],
+      [
+        "NewsNation",
+        "News",
+        "sljK5vlTcRk"
+      ],
+      [
+        "One America News",
+        "News",
+        "l1-Xsq3Cg8g"
+      ],
+      [
+        "Scripps News",
+        "News",
+        "4PxGE9tPi2Y"
+      ],
+      [
+        "The Weather Channel",
+        "News",
+        "AERMXq8CBCQ"
+      ],
+      [
+        "TYT",
+        "News"
+      ],
+      [
+        "Court TV",
+        "News"
+      ],
+      [
+        "Law & Crime",
+        "News"
+      ],
+      [
+        "AMC",
+        "Movies",
+        "fvcHs7wIpnQ"
+      ],
+      [
+        "AMC Thrillers",
+        "Movies",
+        "Gh3CBdlmOZk"
+      ],
+      [
+        "FXM",
+        "Movies",
+        "l-ayCXoliYM"
+      ],
+      [
+        "IFC",
+        "Movies",
+        "jSLAfhUshu0"
+      ],
+      [
+        "SundanceTV",
+        "Movies",
+        "ygixx9q0dMk"
+      ],
+      [
+        "TCM",
+        "Movies",
+        "9av9pOXjzCs"
+      ],
+      [
+        "Hallmark Channel",
+        "Movies",
+        "bn1vcnzpLVo"
+      ],
+      [
+        "Hallmark Mystery",
+        "Movies",
+        "smjqCAJBb5I"
+      ],
+      [
+        "Hallmark Family",
+        "Movies",
+        "kEpUfHpFdc4"
+      ],
+      [
+        "Great American Family",
+        "Movies",
+        "TCa_PaxJhDs"
+      ],
+      [
+        "Great American Faith & Living",
+        "Movies",
+        "snh3JWlaaQM"
+      ],
+      [
+        "Cartoon Network",
+        "Kids",
+        "taXvo4dawak"
+      ],
+      [
+        "Disney Channel",
+        "Kids",
+        "SHVOEt0W7dY"
+      ],
+      [
+        "Disney Junior",
+        "Kids",
+        "y9bVd-4JQAk"
+      ],
+      [
+        "Disney XD",
+        "Kids",
+        "7H6WBFopuJA"
+      ],
+      [
+        "Nickelodeon",
+        "Kids",
+        "umkyQ6aUCjo"
+      ],
+      [
+        "Nick Jr.",
+        "Kids",
+        "ke_FxJO6xWk"
+      ],
+      [
+        "Nicktoons",
+        "Kids",
+        "pBd5NJCKLQY"
+      ],
+      [
+        "TeenNick",
+        "Kids",
+        "ig_9mI8IcIY"
+      ],
+      [
+        "PBS Kids",
+        "Kids"
+      ],
+      [
+        "AWE",
+        "Other",
+        "_lB7AnplwGE"
+      ],
+      [
+        "Adult Swim",
+        "Other"
+      ],
+      [
+        "All Reality",
+        "Other",
+        "f0MKGcxHCH8"
+      ],
+      [
+        "American Crimes",
+        "Other"
+      ],
+      [
+        "Animal Planet",
+        "Other",
+        "bW45k2ypsSY"
+      ],
+      [
+        "BBC America",
+        "Other",
+        "HP7WCSCwPWc"
+      ],
+      [
+        "BET",
+        "Other",
+        "F5nfX6NENoY"
+      ],
+      [
+        "BET Her",
+        "Other",
+        "a-za8OhbqKA"
+      ],
+      [
+        "Bloomberg Originals",
+        "Other",
+        "arRNaGAjvTU"
+      ],
+      [
+        "Bounce",
+        "Other",
+        "xXq00ARzEu8"
+      ],
+      [
+        "Bravo",
+        "Other",
+        "tUl6gv0o2-A"
+      ],
+      [
+        "Cars TV",
+        "Other",
+        "ZjeMncEmnI0"
+      ],
+      [
+        "Charge!",
+        "Other",
+        "F0mXRe4MLQs"
+      ],
+      [
+        "CMT",
+        "Other",
+        "JBnZMJSHb0g"
+      ],
+      [
+        "Comedy Central",
+        "Other",
+        "QYJ_y_HGLfI"
+      ],
+      [
+        "Comedy.TV",
+        "Other",
+        "6_8jp5IHPeo"
+      ],
+      [
+        "Comet",
+        "Other",
+        "kFEoSYVJIXs"
+      ],
+      [
+        "Cozi TV",
+        "Other",
+        "bl_11YF98ZA"
+      ],
+      [
+        "Dabl",
+        "Other",
+        "Kb1tsNmXnPI"
+      ],
+      [
+        "Discovery",
+        "Other",
+        "F8auev_07_4"
+      ],
+      [
+        "Discovery Turbo",
+        "Other",
+        "_05BVmhzOZM"
+      ],
+      [
+        "Docurama",
+        "Other"
+      ],
+      [
+        "Dove",
+        "Other"
+      ],
+      [
+        "E!",
+        "Other",
+        "6wktxKUM4mk"
+      ],
+      [
+        "EstrellaTV",
+        "Other"
+      ],
+      [
+        "Food Network",
+        "Other",
+        "pGLvOHMxZtA"
+      ],
+      [
+        "FOX Soul",
+        "Other",
+        "2AE_gd7sn0E"
+      ],
+      [
+        "Freeform",
+        "Other",
+        "ss2BcarroiA"
+      ],
+      [
+        "FX",
+        "Other",
+        "IG3bbLrxX6E"
+      ],
+      [
+        "FXX",
+        "Other",
+        "FdZCbXY76Lg"
+      ],
+      [
+        "Galavisión",
+        "Other",
+        "sNg2bdVlHnk"
+      ],
+      [
+        "Game Show Network",
+        "Other",
+        "w7JqmX9Szs0"
+      ],
+      [
+        "GREAT TV",
+        "Other",
+        "1h6W18YaGu8"
+      ],
+      [
+        "HBCU GO",
+        "Other",
+        "UmFDCQRcRpg"
+      ],
+      [
+        "HGTV",
+        "Other",
+        "_RhYm3yS0mc"
+      ],
+      [
+        "HSN",
+        "Other",
+        "XJPpvE3Ozto"
+      ],
+      [
+        "Investigation Discovery",
+        "Other",
+        "ctcbdHN4JaQ"
+      ],
+      [
+        "ION",
+        "Other",
+        "Jn4FT03UmDE"
+      ],
+      [
+        "JusticeCentral.TV",
+        "Other",
+        "WcT-7rQYYrg"
+      ],
+      [
+        "Local Now",
+        "Other",
+        "g2FUptdr6O8"
+      ],
+      [
+        "Localish",
+        "Other",
+        "UkBXBMinmuc"
+      ],
+      [
+        "Magnolia Network",
+        "Other",
+        "bO-YMegOuk4"
+      ],
+      [
+        "MotorTrend",
+        "Other"
+      ],
+      [
+        "MTV",
+        "Other",
+        "1tj0QQa95vk"
+      ],
+      [
+        "MTV2",
+        "Other",
+        "BW7e26jSTCM"
+      ],
+      [
+        "MTV Classic",
+        "Other",
+        "V8y8FHqMDdc"
+      ],
+      [
+        "National Geographic",
+        "Other",
+        "9YlbP7dWQKk"
+      ],
+      [
+        "Nat Geo Wild",
+        "Other",
+        "WnZ9KEwVqCI"
+      ],
+      [
+        "NBC Universo",
+        "Other"
+      ],
+      [
+        "OWN",
+        "Other",
+        "tfzGx-Y0ADw",
+        "Oprah Winfrey Network"
+      ],
+      [
+        "Oxygen",
+        "Other",
+        null,
+        "Oxygen True Crime"
+      ],
+      [
+        "Oxygen True Crime",
+        "Other",
+        "cqK6qbX3VPM"
+      ],
+      [
+        "Paramount Network",
+        "Other",
+        "wnX4TIA6X-E"
+      ],
+      [
+        "Pets TV",
+        "Other",
+        "Q4FgVx7ZrPI"
+      ],
+      [
+        "Pop",
+        "Other",
+        "sEsBD1neFR0"
+      ],
+      [
+        "QVC",
+        "Other",
+        "tbPt1YLb3fU"
+      ],
+      [
+        "Recipe.TV",
+        "Other",
+        "uW_Z1whHRsA"
+      ],
+      [
+        "ROAR",
+        "Other",
+        "wr4D_SAef5k"
+      ],
+      [
+        "Smithsonian Channel",
+        "Other",
+        "zhbJZfjSDbM"
+      ],
+      [
+        "Start TV",
+        "Other",
+        "yfHvT_59ynQ"
+      ],
+      [
+        "Stories by AMC",
+        "Other",
+        "kYoSxI8hsVA"
+      ],
+      [
+        "Syfy",
+        "Other",
+        "aACnxZg7pHw"
+      ],
+      [
+        "Tastemade",
+        "Other"
+      ],
+      [
+        "TBS",
+        "Other",
+        "zBiMT2HxLOQ"
+      ],
+      [
+        "Telemundo",
+        "Other"
+      ],
+      [
+        "The Great Courses",
+        "Other"
+      ],
+      [
+        "TheGrio",
+        "Other",
+        "ZHhX0F6GD74"
+      ],
+      [
+        "The Nest",
+        "Other",
+        "x3aY_24-Kt4"
+      ],
+      [
+        "TLC",
+        "Other",
+        "MITjFVedfq8"
+      ],
+      [
+        "TNT",
+        "Other",
+        "XPIO03Bnsig"
+      ],
+      [
+        "Travel Channel",
+        "Other",
+        "ZiMb7TVTPkk"
+      ],
+      [
+        "truTV",
+        "Other",
+        "jz0AVc-9mpw"
+      ],
+      [
+        "TV Land",
+        "Other",
+        "U15QuS0I1yA"
+      ],
+      [
+        "UniMás",
+        "Other"
+      ],
+      [
+        "Univision",
+        "Other"
+      ],
+      [
+        "USA Network",
+        "Other",
+        "ywtLkiJjVkQ"
+      ],
+      [
+        "VH1",
+        "Other",
+        "BvhhQTWgB9s"
+      ],
+      [
+        "The Walking Dead Universe",
+        "Other",
+        "Z-LYRYVb48Y"
+      ],
+      [
+        "WE tv",
+        "Other",
+        "BYszKnIsNjA"
+      ],
+      [
+        "World at War",
+        "Other",
+        "5PatVgC4aGg"
+      ]
+    ],
+    "hululive": [
+      [
+        "ABC",
+        "Local"
+      ],
+      [
+        "CBS",
+        "Local"
+      ],
+      [
+        "FOX",
+        "Local"
+      ],
+      [
+        "NBC",
+        "Local"
+      ],
+      [
+        "PBS",
+        "Local"
+      ],
+      [
+        "The CW",
+        "Local"
+      ],
+      [
+        "ESPN",
+        "Sports"
+      ],
+      [
+        "ESPN2",
+        "Sports"
+      ],
+      [
+        "ESPNews",
+        "Sports"
+      ],
+      [
+        "ESPNU",
+        "Sports"
+      ],
+      [
+        "ACC Network",
+        "Sports"
+      ],
+      [
+        "SEC Network",
+        "Sports"
+      ],
+      [
+        "Big Ten Network",
+        "Sports"
+      ],
+      [
+        "CBS Sports Network",
+        "Sports"
+      ],
+      [
+        "FS1",
+        "Sports"
+      ],
+      [
+        "FS2",
+        "Sports"
+      ],
+      [
+        "Golf Channel",
+        "Sports"
+      ],
+      [
+        "MLB Network",
+        "Sports"
+      ],
+      [
+        "NFL Network",
+        "Sports"
+      ],
+      [
+        "FanDuel TV",
+        "Sports"
+      ],
+      [
+        "Fubo Sports Network",
+        "Sports"
+      ],
+      [
+        "T2 Live Tennis",
+        "Sports"
+      ],
+      [
+        "TUDN",
+        "Sports"
+      ],
+      [
+        "ABC News Live",
+        "News"
+      ],
+      [
+        "Bloomberg Television",
+        "News"
+      ],
+      [
+        "CBS News",
+        "News"
+      ],
+      [
+        "CNBC",
+        "News"
+      ],
+      [
+        "CNN",
+        "News"
+      ],
+      [
+        "CNN International",
+        "News"
+      ],
+      [
+        "C-SPAN",
+        "News"
+      ],
+      [
+        "C-SPAN2",
+        "News"
+      ],
+      [
+        "C-SPAN3",
+        "News"
+      ],
+      [
+        "FOX Business",
+        "News"
+      ],
+      [
+        "FOX News",
+        "News"
+      ],
+      [
+        "FOX Weather",
+        "News"
+      ],
+      [
+        "HLN",
+        "News"
+      ],
+      [
+        "LiveNOW from FOX",
+        "News"
+      ],
+      [
+        "MS NOW",
+        "News"
+      ],
+      [
+        "NBC News NOW",
+        "News"
+      ],
+      [
+        "Newsmax",
+        "News"
+      ],
+      [
+        "NewsNation",
+        "News"
+      ],
+      [
+        "The Weather Channel",
+        "News"
+      ],
+      [
+        "Justice Central",
+        "News"
+      ],
+      [
+        "FXM",
+        "Movies"
+      ],
+      [
+        "TCM",
+        "Movies"
+      ],
+      [
+        "Hallmark Channel",
+        "Movies"
+      ],
+      [
+        "Hallmark Mystery",
+        "Movies"
+      ],
+      [
+        "Great American Family",
+        "Movies"
+      ],
+      [
+        "Lifetime Movies",
+        "Movies"
+      ],
+      [
+        "LMN",
+        "Movies"
+      ],
+      [
+        "Cartoon Network",
+        "Kids"
+      ],
+      [
+        "Disney Channel",
+        "Kids"
+      ],
+      [
+        "Disney Junior",
+        "Kids"
+      ],
+      [
+        "Disney XD",
+        "Kids"
+      ],
+      [
+        "Nickelodeon",
+        "Kids"
+      ],
+      [
+        "Nick Jr.",
+        "Kids"
+      ],
+      [
+        "PBS Kids",
+        "Kids"
+      ],
+      [
+        "A&E",
+        "Other"
+      ],
+      [
+        "ABC Localish",
+        "Other"
+      ],
+      [
+        "Adult Swim",
+        "Other"
+      ],
+      [
+        "Animal Planet",
+        "Other"
+      ],
+      [
+        "BET",
+        "Other"
+      ],
+      [
+        "Bravo",
+        "Other"
+      ],
+      [
+        "Charge!",
+        "Other"
+      ],
+      [
+        "CMT",
+        "Other"
+      ],
+      [
+        "Comedy Central",
+        "Other"
+      ],
+      [
+        "Comedy.TV",
+        "Other"
+      ],
+      [
+        "Comet",
+        "Other"
+      ],
+      [
+        "Cozi TV",
+        "Other"
+      ],
+      [
+        "Crime+Investigation",
+        "Other",
+        null,
+        "Crime & Investigation Network"
+      ],
+      [
+        "Dabl",
+        "Other"
+      ],
+      [
+        "Discovery",
+        "Other"
+      ],
+      [
+        "Discovery Turbo",
+        "Other"
+      ],
+      [
+        "E!",
+        "Other"
+      ],
+      [
+        "Food Network",
+        "Other"
+      ],
+      [
+        "FOX Soul",
+        "Other"
+      ],
+      [
+        "Freeform",
+        "Other"
+      ],
+      [
+        "FX",
+        "Other"
+      ],
+      [
+        "FXX",
+        "Other"
+      ],
+      [
+        "FYI",
+        "Other"
+      ],
+      [
+        "Galavisión",
+        "Other"
+      ],
+      [
+        "Game Show Network",
+        "Other"
+      ],
+      [
+        "HGTV",
+        "Other"
+      ],
+      [
+        "History",
+        "Other"
+      ],
+      [
+        "Investigation Discovery",
+        "Other"
+      ],
+      [
+        "Lifetime",
+        "Other"
+      ],
+      [
+        "Magnolia Network",
+        "Other"
+      ],
+      [
+        "MotorTrend",
+        "Other"
+      ],
+      [
+        "MTV",
+        "Other"
+      ],
+      [
+        "National Geographic",
+        "Other"
+      ],
+      [
+        "Nat Geo Wild",
+        "Other"
+      ],
+      [
+        "OWN",
+        "Other",
+        null,
+        "Oprah Winfrey Network"
+      ],
+      [
+        "Oxygen",
+        "Other",
+        null,
+        "Oxygen True Crime"
+      ],
+      [
+        "Paramount Network",
+        "Other"
+      ],
+      [
+        "Pop",
+        "Other"
+      ],
+      [
+        "QVC",
+        "Other"
+      ],
+      [
+        "Smithsonian Channel",
+        "Other"
+      ],
+      [
+        "Start TV",
+        "Other"
+      ],
+      [
+        "Syfy",
+        "Other"
+      ],
+      [
+        "TBS",
+        "Other"
+      ],
+      [
+        "Telemundo",
+        "Other"
+      ],
+      [
+        "TheGrio",
+        "Other"
+      ],
+      [
+        "TLC",
+        "Other"
+      ],
+      [
+        "TNT",
+        "Other"
+      ],
+      [
+        "Travel Channel",
+        "Other"
+      ],
+      [
+        "truTV",
+        "Other"
+      ],
+      [
+        "True Crime Network",
+        "Other"
+      ],
+      [
+        "TV Land",
+        "Other"
+      ],
+      [
+        "UniMás",
+        "Other"
+      ],
+      [
+        "Univision",
+        "Other"
+      ],
+      [
+        "USA Network",
+        "Other"
+      ],
+      [
+        "Vevo",
+        "Other"
+      ],
+      [
+        "VH1",
+        "Other"
+      ],
+      [
+        "Vice",
+        "Other"
+      ],
+      [
+        "World at War",
+        "Other"
+      ]
+    ]
+  }
+}
