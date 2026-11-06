@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "flags": {
     "contentHub": true,
     "multiview": true,
@@ -107,7 +107,7 @@
       ],
       "deepLink": null,
       "search": null,
-      "tmdbProviderId": 531
+      "tmdbProviderId": 2303
     },
     {
       "id": "appletv",
